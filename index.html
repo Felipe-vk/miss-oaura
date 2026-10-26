@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09111f">
+  <title>Missão Aura | Descubra seu perfil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="space-glow glow-one"></div>
+  <div class="space-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Missão Aura, início">
+      <span class="brand-mark">✦</span><span>MISSÃO <b>AURA</b></span>
+    </a>
+    <span class="status"><span class="status-dot"></span> PROTOCOLO DE RECRUTAMENTO · 2089</span>
+  </header>
+
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow"><span class="eyebrow-line"></span> ARQUIVO DE EXPEDIÇÃO Nº 067</p>
+      <h1>Descubra seu <span>perfil</span><br>para a Missão Aura.</h1>
+      <p class="intro-copy">Um planeta desconhecido. Quatro caminhos possíveis. Responda ao diagnóstico e descubra qual função combina com você nesta expedição.</p>
+      <div class="mission-meta">
+        <div><span class="meta-icon">⌁</span><span><b>ANO 2089</b><small>Futuro próximo</small></span></div>
+        <div><span class="meta-icon">◎</span><span><b>PLANETA AURA</b><small>Destino não mapeado</small></span></div>
+        <div><span class="meta-icon">✧</span><span><b>4 PERFIS</b><small>Uma equipe</small></span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="form-panel">
+      <div class="panel-heading">
+        <div><p class="section-kicker">ETAPA 01 / IDENTIFICAÇÃO</p><h2>Ficha do participante</h2></div>
+        <span class="step-count">01 <i>/ 02</i></span>
+      </div>
+      <form id="aura-form" novalidate>
+        <div class="field-grid">
+          <div class="field">
+            <label for="nome">Nome completo <span>*</span></label>
+            <input id="nome" name="nome" type="text" placeholder="Como devemos chamar você?" maxlength="70" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="nascimento">Data de nascimento <span>*</span></label>
+            <input id="nascimento" name="nascimento" type="date" required>
+          </div>
+        </div>
+
+        <div class="section-divider"><span>ETAPA 02 / DIAGNÓSTICO</span><span class="divider-line"></span></div>
+        <p class="question-intro">Escolha a alternativa que mais combina com você. Não existe resposta errada.</p>
+
+        <fieldset class="question" data-question="1">
+          <legend><span class="question-number">01</span> A nave apresenta uma falha inesperada. O que você faz primeiro?</legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="q1" value="construcao" required><span class="option-letter">A</span><span>Examino o sistema e tento consertá-lo.</span></label>
+            <label class="option"><input type="radio" name="q1" value="investigacao"><span class="option-letter">B</span><span>Investigo os dados para descobrir a causa.</span></label>
+            <label class="option"><input type="radio" name="q1" value="exploracao"><span class="option-letter">C</span><span>Procuro uma solução alternativa no ambiente.</span></label>
+            <label class="option"><input type="radio" name="q1" value="planejamento"><span class="option-letter">D</span><span>Organizo a equipe e defino as prioridades.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-question="2">
+          <legend><span class="question-number">02</span> Qual atividade mais desperta sua curiosidade?</legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="q2" value="construcao" required><span class="option-letter">A</span><span>Criar ferramentas e construir equipamentos.</span></label>
+            <label class="option"><input type="radio" name="q2" value="investigacao"><span class="option-letter">B</span><span>Estudar amostras e analisar descobertas.</span></label>
+            <label class="option"><input type="radio" name="q2" value="exploracao"><span class="option-letter">C</span><span>Conhecer regiões nunca visitadas.</span></label>
+            <label class="option"><input type="radio" name="q2" value="planejamento"><span class="option-letter">D</span><span>Montar estratégias para atingir objetivos.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-question="3">
+          <legend><span class="question-number">03</span> Como você prefere contribuir em um trabalho em grupo?</legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="q3" value="construcao" required><span class="option-letter">A</span><span>Colocando a mão na massa e resolvendo problemas.</span></label>
+            <label class="option"><input type="radio" name="q3" value="investigacao"><span class="option-letter">B</span><span>Pesquisando e compartilhando informações.</span></label>
+            <label class="option"><input type="radio" name="q3" value="exploracao"><span class="option-letter">C</span><span>Testando ideias novas e buscando possibilidades.</span></label>
+            <label class="option"><input type="radio" name="q3" value="planejamento"><span class="option-letter">D</span><span>Distribuindo tarefas e acompanhando o progresso.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-question="4">
+          <legend><span class="question-number">04</span> O que seria mais importante para você na Missão Aura?</legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="q4" value="construcao" required><span class="option-letter">A</span><span>Garantir que os equipamentos funcionem.</span></label>
+            <label class="option"><input type="radio" name="q4" value="investigacao"><span class="option-letter">B</span><span>Entender a vida e os mistérios do planeta.</span></label>
+            <label class="option"><input type="radio" name="q4" value="exploracao"><span class="option-letter">C</span><span>Mapear novos lugares e viver descobertas.</span></label>
+            <label class="option"><input type="radio" name="q4" value="planejamento"><span class="option-letter">D</span><span>Manter a missão segura e bem organizada.</span></label>
+          </div>
+        </fieldset>
+
+        <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+        <button class="primary-button" type="submit">Descobrir meu perfil <span aria-hidden="true">↗</span></button>
+        <p class="privacy-note"><span>◈</span> Seus dados são usados apenas para gerar o resultado deste teste.</p>
+      </form>
+    </section>
+
+    <section class="result-panel panel" id="result-panel" hidden aria-live="polite">
+      <div class="panel-heading">
+        <div><p class="section-kicker">ANÁLISE CONCLUÍDA / RELATÓRIO 067</p><h2>Perfil identificado</h2></div>
+        <span class="result-stamp">APROVADO</span>
+      </div>
+      <div id="result-content"></div>
+      <button type="button" id="reset-button" class="secondary-button">↺ &nbsp; -refaça-</button>
+    </section>
+  </main>
+  <footer><span>MISSÃO AURA <span class="footer-dot">•</span> 2089</span><span class="footer-code">aura67</span><span>EXPLORAR · DESCOBRIR · CONSTRUIR</span></footer>
+</body>
+</html>
